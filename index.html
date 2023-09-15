@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/pokebal-image.png" type="image/x-icon">
+    <title>Pokedex</title>
+
+    <!-- Arquivo de estilo da página -->
+    <link rel="stylesheet" href="./assets/global.css" />
+  </head>
+  <body>
+    <main id="content">
+      <header class="content-header">
+        <figure>
+          <img src="./assets/images/pokebal-image.png" alt="" />
+          <img src="./assets/images/logo-header.png" alt="" />
+          <img src="./assets/images/pokebal-image.png" alt="" />
+        </figure>
+        <form id="search-section">
+          <input type="text" id="search-pokemon" placeholder="Search" />
+          <button onclick="buscar()">
+            <img src="./assets/images/search-icon.svg" alt="" />
+          </button>
+        </form>
+      </header>
+
+      <section>
+        <ol class="pokemons" id="pokemon-list"></ol>
+        <div class="pagination">
+          <button id="loadMoreButton">Load more</button>
+        </div>
+      </section>
+      <section id="pokemon-information"></section>
+    </main>
+    <script src="./assets/javascript/modal-stats-pokemon.js"></script>
+    <script src="./assets//javascript/pokeApi.js"></script>
+    <script src="./assets/javascript/pokemon-model.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
